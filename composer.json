@@ -1,0 +1,35 @@
+{
+  "name": "backupolator/backupolator",
+  "description": "This is a powerful WordPress plugin for backing up files and databases in your WordPress",
+  "keywords": [
+    "wordpress",
+    "plugin",
+    "backup"
+  ],
+  "type": "project",
+  "require": {
+    "rah/danpu": "*"
+  },
+  "license": "backupolator",
+  "autoload": {
+    "files": [
+      "bootstrap/boot.php"
+    ],
+    "psr-4": {
+      "Backupolator\\": "app/"
+    }
+  },
+  "authors": [
+    {
+      "name": "majeed mohammadian",
+      "email": "majeedmohammadian@gmail.com"
+    }
+  ],
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
