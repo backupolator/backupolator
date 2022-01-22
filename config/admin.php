@@ -11,6 +11,9 @@
 add_action('admin_init', function () {
     wp_enqueue_script('backupolator-admin');
     wp_enqueue_style('backupolator-admin');
+    if(is_rtl()) {
+        wp_enqueue_style('backupolator-admin-rtl');
+    }
 });
 
 add_action('admin_head', function () {
