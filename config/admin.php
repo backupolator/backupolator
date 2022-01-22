@@ -11,6 +11,7 @@
 add_action('admin_init', function () {
     wp_enqueue_script('backupolator-admin');
     wp_enqueue_style('backupolator-admin');
+    wp_enqueue_style('backupolator-admin-font');
     if(is_rtl()) {
         wp_enqueue_style('backupolator-admin-rtl');
     }

@@ -2,6 +2,10 @@
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
 }
+#plugin-info * {
+    font-family: "font-primary";
+}
+
 #plugin-info {
     margin-left: 20px;
     margin-top: 60px;
