@@ -9,6 +9,6 @@
 | below
 |
 */
-register_deactivation_hook(ASSET_BACKUPOLATOR, function () {
+register_deactivation_hook(BACKUPOLATOR_PATH, function () {
 
 });

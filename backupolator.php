@@ -14,8 +14,10 @@
 // Limit Direct Access.
 defined('ABSPATH') || exit('no access');
 
-const PATH_BACKUPOLATOR = __DIR__;
-const ASSET_BACKUPOLATOR = __FILE__;
+const BACKUPOLATOR_VERSION = '1.0.0';
+const BACKUPOLATOR_PATH = __DIR__;
+const BACKUPOLATOR_FILE = __FILE__;
+const BACKUPOLATOR_VIEW = __DIR__ . DIRECTORY_SEPARATOR . 'app' . DIRECTORY_SEPARATOR . 'View' . DIRECTORY_SEPARATOR;
 
 require_once 'vendor' . DIRECTORY_SEPARATOR . 'autoload.php';
 

@@ -2,13 +2,10 @@
 
 /*
 |--------------------------------------------------------------------------
-| Activation Plugin
+| Shortcode Initialize Plugin
 |--------------------------------------------------------------------------
 |
-| You can enter the steps you want to activate the plugin in the function
-| below
+| Shortcodes are listed here
 |
 */
-register_activation_hook(BACKUPOLATOR_PATH, function () {
-
-});
+//add_shortcode('ceJQuery', array($this, 'add_short_code_ceJQuery'));

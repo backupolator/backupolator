@@ -1,0 +1,186 @@
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+#plugin-info {
+    margin-left: 20px;
+    margin-top: 60px;
+}
+.container {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12 {
+    position: relative;
+    width: 100%;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.col-1 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 8.33333%;
+    flex: 0 0 8.33333%;
+    max-width: 8.33333%;
+}
+.col-2 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 16.66666%;
+    flex: 0 0 16.66666%;
+    max-width: 16.66666%;
+}
+.col-3 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+.col-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.33333%;
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
+.col-5 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 41.66666%;
+    flex: 0 0 41.66666%;
+    max-width: 41.66666%;
+}
+.col-6 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.col-7 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 58.33333%;
+    flex: 0 0 58.33333%;
+    max-width: 58.33333%;
+}
+.col-8 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 66.66666%;
+    flex: 0 0 66.66666%;
+    max-width: 66.66666%;
+}
+.col-9 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 75%;
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+.col-10 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 83.33333%;
+    flex: 0 0 83.33333%;
+    max-width: 83.33333%;
+}
+.col-11 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 91.66666%;
+    flex: 0 0 91.66666%;
+    max-width: 91.66666%;
+}
+.col-12 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.svg-primary {
+    background: rgba(95,99,242,.1);
+}
+.svg-secondary {
+    background: rgba(255,105,165,.1);
+}
+.svg-success {
+    background: rgba(32,201,151,.1);
+}
+.plugin-info-widget {
+    box-shadow: 0 5px 20px rgb(146 153 184 / 3%);
+    padding: 24px 25px 20px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.plugin-info-widget > div {
+    display: flex;
+    align-items: start;
+}
+.plugin-info-widget > div > div:first-child {
+    margin-left: 20px;
+    border-radius: 8px;
+    width: 55px;
+    height: 55px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+.plugin-info-widget > div > div:first-child > svg {}
+.plugin-info-widget > div > div:last-child {}
+.plugin-info-widget > div > div:last-child > h2 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.plugin-info-widget > div > div:last-child > p {
+    font-size: 14px;
+}
+.plugin-info-widget > div > div:last-child > div {}
+.plugin-info-widget > div > div:last-child > div > small {}
+
+.plugin-info-link {
+    background-color: #fff;
+    position: relative;
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #1d2327;
+    font-size: 14px;
+    font-weight: bold;
+}
+.plugin-info-link > div {}
+.plugin-info-link > div > div {
+    text-align: center;
+}
+.plugin-info-link > div > div > svg {}
+.plugin-info-link > div > span {}
+
+.plugin-info-list {
+    background-color: #fff;
+    border-radius: 8px;
+}
+.plugin-info-header {}
+.plugin-info-header > h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 20px 15px 15px;
+    border-bottom: 1px solid #efefef;
+}
+.plugin-info-header > div {}
+.plugin-info-table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: #212529;
+}
+.plugin-info-table > thead {}
+.plugin-info-table > thead > tr {}
+.plugin-info-table > thead > tr > th {
+    border-top: 0!important;
+    border-bottom: 0!important;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+    color: #272b41;
+}
+.plugin-info-table > tbody {}
+.plugin-info-table > tbody > tr {}
+.plugin-info-table > tbody > tr > td {}

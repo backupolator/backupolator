@@ -8,7 +8,8 @@
   ],
   "type": "project",
   "require": {
-    "rah/danpu": "*"
+    "rah/danpu": "*",
+    "smarty/smarty": "*"
   },
   "license": "backupolator",
   "autoload": {
