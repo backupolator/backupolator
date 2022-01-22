@@ -12,6 +12,7 @@ add_action('admin_init', function () {
     wp_enqueue_script('backupolator-admin');
     wp_enqueue_style('backupolator-admin');
     wp_enqueue_style('backupolator-admin-font');
+    wp_enqueue_style('backupolator-admin-font-social');
     if(is_rtl()) {
         wp_enqueue_style('backupolator-admin-rtl');
     }
@@ -43,11 +44,13 @@ add_action('admin_menu', function () {
     }, 'dashicons-database');
     add_submenu_page('backupolator-dashboard', __('Dashboard', 'backupolator'), __('Dashboard', 'backupolator'), 'administrator', 'backupolator-dashboard');
 
-    add_submenu_page('backupolator-dashboard', __('Backup', 'backupolator'), __('Backup', 'backupolator'), 'administrator', 'backupolator-test', function () {
-        try {
-            echo (new Backupolator\Controller\Admin\Dashboard)->index();
-        } catch (SmartyException $e) {
-            echo $e->getMessage();
-        }
-    });
+    if(file_exists(BACKUPOLATOR_PATH . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'autoload.php')) {
+        add_submenu_page('backupolator-dashboard', __('Backup', 'backupolator'), __('Backup', 'backupolator'), 'administrator', 'backupolator-test', function () {
+            try {
+                echo (new Backupolator\Controller\Admin\Dashboard)->index();
+            } catch (SmartyException $e) {
+                echo $e->getMessage();
+            }
+        });
+    }
 });
