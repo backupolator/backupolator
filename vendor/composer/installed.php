@@ -1,0 +1,41 @@
+<?php return array(
+    'root' => array(
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
+        'type' => 'project',
+        'install_path' => __DIR__ . '/../../',
+        'aliases' => array(),
+        'reference' => 'de3c942485807664896f7c19aad727d0d98e5be2',
+        'name' => 'backupolator/backupolator',
+        'dev' => true,
+    ),
+    'versions' => array(
+        'backupolator/backupolator' => array(
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
+            'type' => 'project',
+            'install_path' => __DIR__ . '/../../',
+            'aliases' => array(),
+            'reference' => 'de3c942485807664896f7c19aad727d0d98e5be2',
+            'dev_requirement' => false,
+        ),
+        'rah/danpu' => array(
+            'pretty_version' => '2.7.0',
+            'version' => '2.7.0.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../rah/danpu',
+            'aliases' => array(),
+            'reference' => '5e4fa78862d397831a19ca6987d3939690e2d05b',
+            'dev_requirement' => false,
+        ),
+        'smarty/smarty' => array(
+            'pretty_version' => 'v4.0.4',
+            'version' => '4.0.4.0',
+            'type' => 'library',
+            'install_path' => __DIR__ . '/../smarty/smarty',
+            'aliases' => array(),
+            'reference' => 'cdf0f2b164fbb9a96f86be97713a2426f0bb0c97',
+            'dev_requirement' => false,
+        ),
+    ),
+);

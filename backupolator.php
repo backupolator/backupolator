@@ -19,7 +19,11 @@ const BACKUPOLATOR_PATH = __DIR__;
 const BACKUPOLATOR_FILE = __FILE__;
 const BACKUPOLATOR_VIEW = __DIR__ . DIRECTORY_SEPARATOR . 'app' . DIRECTORY_SEPARATOR . 'View' . DIRECTORY_SEPARATOR;
 
-require_once 'vendor' . DIRECTORY_SEPARATOR . 'autoload.php';
+if(file_exists(__DIR__ . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'autoload.php')) {
+    require_once 'vendor' . DIRECTORY_SEPARATOR . 'autoload.php';
+} else {
+    die('composer library in "Backupolator plugin" not found!');
+}
 
 /*
 |--------------------------------------------------------------------------
